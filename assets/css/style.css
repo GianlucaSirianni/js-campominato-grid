@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-main{
-    height: 100vh;
+header{
+    width: 100%;
+    
 }
 
 #griglia{
@@ -13,12 +14,13 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;    
+    /* height: 100vh; */
 }
 
 .square{
-    width: calc(100% / 8);
+    width: calc(100% / 10);
     border: 1px solid black;
     aspect-ratio: 1/1;
 }
