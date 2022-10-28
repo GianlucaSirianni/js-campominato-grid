@@ -1,29 +1,26 @@
-let level = document.getElementById("level").value;
-
 function play() {
-    console.log('play');
+  let lvl = document.getElementById("level").value;
+  console.log("play");
 
-  if (level == "easy") {
+  if (lvl == "easy") {
+    console.log("easy");
 
-
-
-    console.log('easy');
-    
-    console.log("play2");
+    // console.log("play2");
     const griglia = document.getElementById("griglia");
-    console.log(griglia);
+    // console.log(griglia);
 
-    function createSquare() {
+    function createSquare(counter) {
       const div = document.createElement("div");
-      div.classList.add("square");
+      div.classList.add("square100");
+      div.innerHTML = counter;
       return div;
     }
 
-    console.log(createSquare());
+    // console.log(createSquare());
 
-    for (let i = 0; i < 100; i++) {
-      let currentElement = createSquare();
-      console.log(currentElement);
+    for (let i = 1; i <= 100; i++) {
+      let currentElement = createSquare(i);
+      //   console.log(currentElement);
 
       currentElement.addEventListener("click", function () {
         // console.log(this);
@@ -32,15 +29,61 @@ function play() {
 
       griglia.append(currentElement);
     }
+  } else if (lvl == "medium") {
+    console.log("medium");
+    // console.log("play2");
+    const griglia = document.getElementById("griglia");
+    // console.log(griglia);
 
+    function createSquare(counter) {
+      const div = document.createElement("div");
+      div.classList.add("square81");
+      div.innerHTML = counter;
+      return div;
+    }
 
+    // console.log(createSquare());
 
+    for (let i = 1; i <= 81; i++) {
+      let currentElement = createSquare(i);
+      //   console.log(currentElement);
 
-  } else if (level == "medium") {
-    console.log('medium');
-  } else if (level == "hard"){
-    console.log('hard');
+      currentElement.addEventListener("click", function () {
+        // console.log(this);
+        this.classList.toggle("active");
+      });
+
+      griglia.append(currentElement);
+    }
+  } else if (lvl == "hard") {
+    console.log("hard");
+    // console.log("play2");
+    const griglia = document.getElementById("griglia");
+    // console.log(griglia);
+
+    function createSquare(counter) {
+      const div = document.createElement("div");
+      div.classList.add("square49");
+      div.innerHTML = counter;
+      return div;
+    }
+
+    // console.log(createSquare());
+
+    for (let i = 1; i <= 49; i++) {
+      let currentElement = createSquare(i);
+      //   console.log(currentElement);
+
+      currentElement.addEventListener("click", function () {
+        // console.log(this);
+        this.classList.toggle("active");
+      });
+
+      griglia.append(currentElement);
+    }
   } else {
-    console.log('uccidimi')
+    console.log("uccidimi");
+    document.getElementById("sadMessage").innerHTML =
+      "Don't you wanna have some fun?";
   }
 }

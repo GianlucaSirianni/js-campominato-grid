@@ -1,12 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
     width: 100%;
-    
+    height: 12vh;
+    background-color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+body{
+    width: 100%;
+    background-color: #7FFFD4;
+    position: relative;
+    height: 100vh;
+}
+
+main{
+    height: calc(80vh);
+}
+
+.logoContainer{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.btnContainer{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2rem;   
+}
+
+.levelPlay{
+    margin-right: 2rem
+}
+
+.btn{
+    width: 100px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.opt{
+    border-radius: 5px;
+}
+
+.logo{
+    width: 20%;
+}
+
+#sadMessage{
+    font-size: 3rem;
 }
 
 #griglia{
@@ -14,16 +69,54 @@ header{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 60%;
-    margin: 0 auto;    
+    width: 80%;
+    margin: 0 auto;
+   
     /* height: 100vh; */
 }
 
-.square{
+.square100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 10);
     border: 1px solid black;
     aspect-ratio: 1/1;
 }
+
+.square81{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 9);
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+}
+
+.square49{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7);
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+}
+
+footer{
+    height:7vh;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.madeBy{
+    margin-left: 1rem;
+}
+
 
 .active{
     background-color: lightcoral;
