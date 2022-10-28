@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+}
+
+#griglia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;    
+}
+
+.square{
+    width: calc(100% / 8);
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+}
+
+.active{
+    background-color: lightcoral;
+}
