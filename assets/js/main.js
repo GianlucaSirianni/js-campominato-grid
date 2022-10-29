@@ -83,7 +83,7 @@ function play() {
     }
   } else {
     console.log("uccidimi");
-    document.getElementById("sadMessage").innerHTML =
-      "Don't you wanna have fun?";
+    // document.getElementById("sadMessage").innerHTML =
+    //   "Don't you wanna have fun?";
   }
 }
