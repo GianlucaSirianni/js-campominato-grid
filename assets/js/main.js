@@ -84,6 +84,6 @@ function play() {
   } else {
     console.log("uccidimi");
     document.getElementById("sadMessage").innerHTML =
-      "Don't you wanna have some fun?";
+      "Don't you wanna have fun?";
   }
 }
